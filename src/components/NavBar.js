@@ -1,9 +1,9 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="navbar">
+  <div className="navbar">
         <p>NavBar testt</p>
       </div>
   );

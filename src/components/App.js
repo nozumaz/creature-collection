@@ -1,11 +1,15 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import NavBar from "./NavBar";
+
 
 function App() {
 
     return (
-        <div className="App">
-        <header className="App-header">
+        <div>
+        <header>
             <h1>test</h1>
+            <NavBar />
         </header>
         <body>
           <p>body test</p>
