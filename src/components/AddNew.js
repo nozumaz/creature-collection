@@ -9,7 +9,7 @@ function AddNew() {
   })
 
   function handleSubmit() {
-    console.log("submitted");
+    console.log("test");
   }
 
   return (
