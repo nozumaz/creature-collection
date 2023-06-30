@@ -1,7 +1,13 @@
 import React from "react";
+import Form from "./Form";
 
 function AddNew() {
-  return <h1>AddNew</h1>;
+  return (
+    <div>
+    <h1>AddNew2</h1>
+    <Form />
+    </div>
+  );
 }
 
 export default AddNew;
