@@ -9,6 +9,7 @@ function AddNew() {
     notes:"",
   })
 
+  //send POST request to add new item to json server
   function handleSubmit() {
     fetch("http://localhost:4000/toys", {
         method: "POST",
@@ -26,10 +27,12 @@ function AddNew() {
     })
   }
 
+  //add new item when "Submit" button is clicked
   function handleChange(e) {
     setFormData({...formData,[e.target.name]: e.target.value})
   }
 
+  //display form for adding new items
   return (
     <div className="form-container">
       <h1>AddNew2</h1>

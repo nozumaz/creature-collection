@@ -1,6 +1,8 @@
 import React from "react";
 
 function Item({ item, onDeleteClick }) {
+
+    //send DELETE request to json server when Delete button is clicked
     function handleDeleteClick(id) {
         fetch(`http://localhost:4000/toys/${id}`, {
             method: "DELETE"
@@ -9,6 +11,7 @@ function Item({ item, onDeleteClick }) {
     .then(() => onDeleteClick(id))
     }
 
+    //display item in HTML
     return (
         <div className="item">
             <h2>{item.name}</h2>

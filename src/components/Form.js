@@ -31,6 +31,7 @@ function Form({ formData, handleChange, handleSubmit }) {
         }
     }
 
+    //display form in HTML
     return (
         <>
             <form className="form" onSubmit={onSubmitClick}>
