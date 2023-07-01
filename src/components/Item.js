@@ -13,6 +13,7 @@ function Item({ item, onDeleteClick }) {
         <div className="item">
             <h2>{item.name}</h2>
             <img src={item.image} alt="picture"/>
+            <p>{item.notes}</p>
             <div className="button-container">
                 <button className="delete" onClick={() => handleDeleteClick(item.id)}>Delete</button>
             </div>

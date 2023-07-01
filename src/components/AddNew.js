@@ -5,7 +5,8 @@ function AddNew() {
   
   const [formData, setFormData] = useState({
     name:"",
-    image:""
+    image:"",
+    notes:"",
   })
 
   function handleSubmit() {
