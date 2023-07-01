@@ -9,9 +9,6 @@ function AddNew() {
   })
 
   function handleSubmit() {
-    console.log(formData.name);
-    console.log(formData.image);
-
     fetch("http://localhost:4000/toys", {
         method: "POST",
         headers: {
