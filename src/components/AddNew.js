@@ -36,10 +36,12 @@ function AddNew() {
   return (
     <div className="form-container">
       <h1>Add Creature</h1>
+      <div className="info-box">
       <p>Use the form below to add a creature to the database.</p>
       <p>Name and image are required, and note is optional.</p>
       <p>Image URL must be .jpg, .jpeg, .png, .gif, or .webp to be accepted. Thanks!</p>
       <Form formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />
+      </div>
     </div>
   );
 }

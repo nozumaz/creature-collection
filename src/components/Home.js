@@ -21,7 +21,7 @@ function Home() {
   //display all items in HTML
   return (
     <div>
-        <h1>Home Page</h1>
+        <h1>Mythical Creature Collection</h1>
         {items.map((item => (
           <Item key={item.id} item={item} onDeleteClick={handleDeleteClick}/>
         )))}

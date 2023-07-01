@@ -3,12 +3,16 @@ import React from "react";
 function About() {
     return (
         <div>
-            <h2>About Page</h2>
-            <p>This is a single page application to display a small json database that can be added and deleted from.</p>
+            <h1>About Page</h1>
+            <div className="info-box">
+            <p>Small collection of mythical creatures that can be added and removed from.</p>
             <br/>
-            <a href="https://github.com/nozumaz/flatiron-phase2-project">Frontend github repository</a>
+            <h3>Github repository links:</h3>
+            <a href="https://github.com/nozumaz/flatiron-phase2-project">Frontend Repository</a>
             <br/>
-            <a href="https://github.com/nozumaz/flatiron-phase2-project-backend">JSON Backend github</a>
+            <br/>
+            <a href="https://github.com/nozumaz/flatiron-phase2-project-backend">JSON Server Repository</a>
+            </div>
         </div>
         );
 }

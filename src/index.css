@@ -1,8 +1,16 @@
 body {
   margin: 0;
-  background-color:rgb(170, 156, 187);
+  background-color:rgb(173, 160, 190);
   text-align:center;
 }
+
+.info-box {
+  padding:15px;
+  background-color:#eeeeee;
+  margin:5px 20px;
+
+}
+
 
 
 img {
@@ -17,6 +25,7 @@ img {
   padding:10px;
   margin:10px;
   background-color:rgb(183, 184, 228);
+  height:500px;
   width:300px;
 }
 
