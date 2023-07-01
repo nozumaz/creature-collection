@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color:rgb(203, 187, 221);
+  background-color:rgb(170, 146, 199);
   text-align:center;
 }
 
@@ -29,4 +29,22 @@ button {
   padding:10px;
   margin:5px 10px;
   border-radius: 3px;
+}
+
+.navbar {
+  display:block;
+  padding:20px;
+  background-color: #dddddd;
+  list-style-type:none;
+  
+}
+
+.nav-link {
+  padding:10px 20px;
+  text-decoration:none;
+  margin:10px;
+  font-size:18px;
+  color:black;
+  border-style:solid;
+  background-color:bisque
 }

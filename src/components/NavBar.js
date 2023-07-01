@@ -7,10 +7,8 @@ function NavBar() {
   return (
     <div className="navbar">
         <NavLink className="nav-link" exact to="/">Home</NavLink>
-        <br />
-        <NavLink className="nav=link" exact to="/add">Add New</NavLink>
-        <br />
-        <NavLink className="nav=link" exact to="/about">About</NavLink>
+        <NavLink className="nav-link" exact to="/add">Add</NavLink>
+        <NavLink className="nav-link" exact to="/about">About</NavLink>
     </div>
   );
 }
