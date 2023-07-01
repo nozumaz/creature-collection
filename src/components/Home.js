@@ -5,6 +5,11 @@ function Home() {
 
   const [toys, setToys] = useState([]);
 
+  function handleDeleteClick(deleteID) {
+    const newList = toys.filter(toy => toy.id !== deleteID)
+    setToys(newList)
+  }
+
   useEffect(() => {
     fetch("http://localhost:4000/toys")
       .then((r) => r.json())
@@ -17,7 +22,7 @@ function Home() {
     <div>
         <h1>Home Page</h1>
         {toys.map((toy => (
-          <Item key={toy.id} toy={toy}/>
+          <Item key={toy.id} toy={toy} onDeleteClick={handleDeleteClick}/>
         )))}
     </div>
   );
