@@ -3,26 +3,26 @@ import Item from "./Item";
 
 function Home() {
 
-  const [toys, setToys] = useState([]);
+  const [items, setItems] = useState([]);
 
   function handleDeleteClick(deleteID) {
-    const newList = toys.filter(toy => toy.id !== deleteID)
-    setToys(newList)
+    const newList = items.filter(item => item.id !== deleteID)
+    setItems(newList)
   }
 
   useEffect(() => {
     fetch("http://localhost:4000/toys")
       .then((r) => r.json())
-      .then((toys) => setToys(toys));
+      .then((items) => setItems(items));
   }, []);
 
-  console.log(toys);
+  console.log(items);
 
   return (
     <div>
         <h1>Home Page</h1>
-        {toys.map((toy => (
-          <Item key={toy.id} toy={toy} onDeleteClick={handleDeleteClick}/>
+        {items.map((item => (
+          <Item key={item.id} item={item} onDeleteClick={handleDeleteClick}/>
         )))}
     </div>
   );

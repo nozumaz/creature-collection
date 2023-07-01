@@ -1,6 +1,6 @@
 import React from "react";
 
-function Item({ toy, onDeleteClick }) {
+function Item({ item, onDeleteClick }) {
     function handleDeleteClick(id) {
         fetch(`http://localhost:4000/toys/${id}`, {
             method: "DELETE"
@@ -11,10 +11,10 @@ function Item({ toy, onDeleteClick }) {
 
     return (
         <div className="item">
-            <h2>{toy.name}</h2>
-            <img src={toy.image} alt="picture"/>
+            <h2>{item.name}</h2>
+            <img src={item.image} alt="picture"/>
             <div className="button-container">
-                <button className="delete" onClick={() => handleDeleteClick(toy.id)}>Delete</button>
+                <button className="delete" onClick={() => handleDeleteClick(item.id)}>Delete</button>
             </div>
         </div>
     )
