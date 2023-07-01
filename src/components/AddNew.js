@@ -21,7 +21,8 @@ function AddNew() {
     })
     setFormData({
         name:"",
-        image:""
+        image:"",
+        notes:""
     })
   }
 
