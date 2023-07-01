@@ -9,13 +9,18 @@ function AddNew() {
   })
 
   function handleSubmit() {
-    console.log("test");
+    console.log(formData.name);
+    console.log(formData.image)
+  }
+
+  function handleChange(e) {
+    setFormData({...formData,[e.target.name]: e.target.value})
   }
 
   return (
     <div className="form-container">
       <h1>AddNew2</h1>
-      <Form formData={formData} handleSubmit={handleSubmit} />
+      <Form formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />
     </div>
   );
 }
