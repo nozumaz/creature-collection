@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color:cornsilk;
+  background-color:rgb(85, 58, 116);
   text-align:center;
 }
 
@@ -16,7 +16,7 @@ img {
   border-style:solid;
   padding:10px;
   margin:10px;
-  background-color:white;
+  background-color:rgb(183, 184, 228);
   width:300px;
 }
 
