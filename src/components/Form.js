@@ -4,7 +4,6 @@ function Form({ formData, handleChange, handleSubmit }) {
 
     const [valid, setValid] = useState("")
     const [error, setError] = useState("")
-    const [validImg, setValidImg] = useState("")
 
     function onSubmitClick(e) {
         e.preventDefault();
@@ -40,7 +39,7 @@ function Form({ formData, handleChange, handleSubmit }) {
                 <input className="text-input" type="text" onChange={handleChange} value={formData.notes} name="notes" placeholder="notes"></input>
                 <input className="submit" value="submit" name="submit" type="submit" />
             </form>
-            <h2 className={valid ? "success" : "error"}>{valid ? "Success!" : error}</h2>
+            <h2 className={valid ? "success" : "error"}>{valid ? `Added successfully!` : error}</h2>
         </>
     )
 }
