@@ -2,12 +2,14 @@
 A simple Single Page Application (SPA) that allows a user to view the contents of a JSON database of creature objects and add or remove objects as desired.
 
 ## Installation
-To install, fork this repository to a local directory and run npm install, then npm start to launch the webpage at http://localhost:3000.
+To install, fork this repository to a local directory and run `npm install`, then `npm start` to launch the webpage at http://localhost:3000.
 
-The JSON server linked below will also be required. Fork the backend repository and run npm install, then npm run dev to start the server on http://localhost:4000.
+The JSON server linked below will also be required. Fork the backend repository and `run npm install`, then `npm run dev` to start the server on http://localhost:4000.
+
+## Usage
+The home page should be populated with the creatures in the JSON database. You can add new creatures by clicking the "Add" link in the navigation bar, or go to the "About" page for a description of the project and relevant links.
 
 ## Links
-
 Frontend React Repository:
 https://github.com/nozumaz/flatiron-phase2-project
 
