@@ -13,3 +13,20 @@ code {
     monospace;
 }
 
+img {
+  width:300px;
+  margin:auto;
+}
+
+.item {
+  display:inline-grid;
+  border-style:solid;
+  padding:10px;
+  margin:10px;
+  background-color:white;
+  width:300px;
+}
+
+button {
+  text-align:center;
+}

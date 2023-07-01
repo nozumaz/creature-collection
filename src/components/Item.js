@@ -10,9 +10,9 @@ function Item({ toy, onDeleteClick }) {
     }
 
     return (
-        <div>
+        <div className="item">
             <h2>{toy.name}</h2>
-            <img src={toy.image} alt="picture" width="300px"/>
+            <img src={toy.image} alt="picture"/>
             <div className="button-container">
                 <button className="delete" onClick={() => handleDeleteClick(toy.id)}>Delete</button>
             </div>
