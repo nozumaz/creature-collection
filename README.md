@@ -1,11 +1,27 @@
-# flatiron-p2-project
+# Mythical Creature Collection
+A simple Single Page Application (SPA) that allows a user to view the contents of a JSON database of creature objects and add or remove objects as desired.
 
+## Installation
+To install, fork this repository to a local directory and run npm install, then npm start to launch the webpage at http://localhost:3000.
 
-## Backend Code Github Repository
+The JSON server linked below will also be required. Fork the backend repository and run npm install, then npm run dev to start the server on http://localhost:4000.
 
+## Links
+
+Frontend React Repository:
+https://github.com/nozumaz/flatiron-phase2-project
+
+JSON Database Repository:
 https://github.com/nozumaz/flatiron-phase2-project-backend
 
-# Getting Started with Create React App
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+# Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
