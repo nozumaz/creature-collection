@@ -4,6 +4,7 @@ function Form({ formData, handleChange, handleSubmit }) {
 
     const [valid, setValid] = useState("")
     const [error, setError] = useState("")
+    const [validImg, setValidImg] = useState("")
 
     function onSubmitClick(e) {
         e.preventDefault();
@@ -14,10 +15,10 @@ function Form({ formData, handleChange, handleSubmit }) {
             setError("Please complete both name and image fields.");
             return;
         } else if (
-            !formData.image.trim().includes(".jpeg" || ".jpeg")
+            !formData.image.match(/\.(jpg|jpeg|png|gif|webp)$/)
         ) {
             setValid(false);
-            setError("Please enter a valid image URL.");
+            setError("Please enter an image URL. Accepted extensions include jpg, jpeg, png, gif, and webp.");
             return;
         } else {
             setValid(true);

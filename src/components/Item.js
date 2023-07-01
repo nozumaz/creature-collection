@@ -12,7 +12,7 @@ function Item({ item, onDeleteClick }) {
     return (
         <div className="item">
             <h2>{item.name}</h2>
-            <img src={item.image} alt="picture"/>
+            <img src={item.image} alt="pic"/>
             <p>{item.notes}</p>
             <div className="button-container">
                 <button className="delete" onClick={() => handleDeleteClick(item.id)}>Delete</button>
