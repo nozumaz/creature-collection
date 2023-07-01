@@ -11,7 +11,7 @@ function AddNew() {
 
   //send POST request to add new item to json server
   function handleSubmit() {
-    fetch("http://localhost:4000/toys", {
+    fetch("http://localhost:4000/creatures", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -38,8 +38,8 @@ function AddNew() {
       <h1>Add Creature</h1>
       <div className="info-box">
       <p>Use the form below to add a creature to the database.</p>
-      <p>Name and image are required, and note is optional.</p>
-      <p>Image URL must be .jpg, .jpeg, .png, .gif, or .webp to be accepted. Thanks!</p>
+      <p>Name and image are <b>required</b>; note is optional. Image URL must be .jpg, .jpeg, .png, .gif, or .webp to be accepted.</p>
+      <p>Thanks!</p>
       <Form formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />
       </div>
     </div>

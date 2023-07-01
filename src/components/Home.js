@@ -13,7 +13,7 @@ function Home() {
 
   //fetch items from json server with GET request
   useEffect(() => {
-    fetch("http://localhost:4000/toys")
+    fetch("http://localhost:4000/creatures")
       .then((r) => r.json())
       .then((items) => setItems(items));
   }, []);

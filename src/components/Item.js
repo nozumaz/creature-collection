@@ -4,7 +4,7 @@ function Item({ item, onDeleteClick }) {
 
     //send DELETE request to json server when Delete button is clicked
     function handleDeleteClick(id) {
-        fetch(`http://localhost:4000/toys/${id}`, {
+        fetch(`http://localhost:4000/creatures/${id}`, {
             method: "DELETE"
        })
     .then(resp => resp.json())
@@ -14,7 +14,7 @@ function Item({ item, onDeleteClick }) {
     //display item in HTML
     return (
         <div className="item">
-            <h2>{item.name}</h2>
+            <h2 className="name-box">{item.name}</h2>
             <img src={item.image} alt="pic"/>
             <p>{item.notes}</p>
             <div className="button-container">

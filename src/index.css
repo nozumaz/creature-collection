@@ -8,29 +8,39 @@ body {
   padding:15px;
   background-color:#eeeeee;
   margin:5px 20px;
-
+  display:inline-block;
 }
 
+h1 {
+  color:rgb(34, 35, 119);
+}
 
+.name-box {
+  background-color: rgb(152, 141, 255);
+  margin:0px 0px;
+  padding:10px;
+  color:aliceblue
+}
 
 img {
   height:300px;
   width:300px;
-  margin:auto;
 }
 
 .item {
   display:inline-grid;
   border-style:solid;
-  padding:10px;
   margin:10px;
   background-color:rgb(183, 184, 228);
   height:500px;
   width:300px;
 }
 
+
 button {
   text-align:center;
+  background-color:#8a0f0f;
+  color:rgb(255, 255, 255);
 }
 
 .text-input {
@@ -45,7 +55,6 @@ button {
   padding:20px;
   background-color: #dddddd;
   list-style-type:none;
-  
 }
 
 .nav-link {
